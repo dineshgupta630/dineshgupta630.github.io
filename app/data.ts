@@ -1,3 +1,5 @@
+import { list } from 'postcss'
+
 type Project = {
   name: string
   description: string
@@ -13,6 +15,7 @@ type WorkExperience = {
   end: string
   link: string
   id: string
+  description: list[string]
 }
 
 type BlogPost = {
@@ -47,79 +50,83 @@ export const PROJECTS: Project[] = [
   },
 ]
 
-export const WORK_EXPERIENCE: WorkExperience[] = [
+// data/workExperience.ts
+export const WORK_EXPERIENCE = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work1',
+    id: 1,
+    title: "Senior Software Engineer",
+    company: "FanDuel",
+    start: "Apr 2023",
+    end: "Present",
+    link: "https://www.fanduel.com/",
+    description: [
+
+    ],
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
+    id: 2,
+    title: "Team Lead",
+    company: "OneFin",
+    start: "Apr 2020",
+    end: "Mar 2023",
+    link: "https://onefin.in/",
+    description: [
+      "Pivoted monolith to SaaS, launching a no-code finance platform used by 50+ clients.",
+      "Led ~10-person cross-functional team; boosted release frequency 3× via CI/CD on GitHub Actions.",
+      "Designed financial APIs processing 10 M+ invoices/month.",
+    ],
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
+    id: 3,
+    title: "Backend Engineer",
+    company: "PrivateCircle",
+    start: "Feb 2019",
+    end: "Mar 2020",
+    link: "https://privatecircle.co/",
+    description: [
+
+    ],
   },
-]
+  {
+    id: 4,
+    title: "Senior Full-Stack Engineer",
+    company: "ShipThis",
+    start: "Nov 2017",
+    end: "Feb 2019",
+    link: "https://shipthis.com/",
+    description: [
+    ],
+  },
+  {
+    id: 5,
+    title: "Senior Full-Stack Engineer",
+    company: "WittyFeed",
+    start: "Jun 2016",
+    end: "Oct 2017",
+    link: "https://www.wittyfeed.tv/",
+    description: [
+      "Co-architected and built WittyFeed’s mobile & desktop platform from zero to 100 M+ monthly users (45 k concurrent).",
+      "Created an internal virality-analytics tool (Python + ML/NLP) that lifted ad revenue and was later pitched to investors.",
+      "Delivered full stack with AngularJS, Python (Flask & Tornado), Node.js; scaled with Memcached and Redis.",
+      "Platform metrics: 250 M page views/month, Alexa #17 in India & #277 global, 2.5 B ad impressions by Mar 2016."
+    ],
+  },
+
+] as const;
+
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-1',
-  },
-  {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
-  },
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    link: 'https://github.com/dineshgupta630',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
-  },
-  {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
-  },
+    link: 'https://www.linkedin.com/in/dinesh-gupta-38a01a124/',
+  }
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'dineshgupta630[at]outlook.com'
