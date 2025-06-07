@@ -15,7 +15,6 @@ type WorkExperience = {
   end: string
   link: string
   id: string
-  description: list[string]
 }
 
 type BlogPost = {
