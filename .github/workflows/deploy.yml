@@ -17,8 +17,8 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - run: npm ci
-      - run: npm run build && npm run export
+      - run: npm install
+      - run: npm run build
 
       - name: Publish to gh-pages
         uses: peaceiris/actions-gh-pages@v4
