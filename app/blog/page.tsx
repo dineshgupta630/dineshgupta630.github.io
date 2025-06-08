@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 
 // Dummy data as a placeholder (replace with your real data)
-export const BLOG_POSTS = [
+const BLOG_POSTS = [
   // {
   //   title: 'Exploring the Intersection of Design, AI, and Design Engineering',
   //   description: 'How AI is changing the way we design',
