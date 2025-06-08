@@ -3,8 +3,16 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { AnimatedBackground } from '@/components/ui/animated-background'
 
+
+type BlogPost = {
+  title: string
+  description: string
+  link: string
+  uid: string
+}
+
 // Dummy data as a placeholder (replace with your real data)
-const BLOG_POSTS = [
+const BLOG_POSTS: BlogPost[] = [
   // {
   //   title: 'Exploring the Intersection of Design, AI, and Design Engineering',
   //   description: 'How AI is changing the way we design',
@@ -35,7 +43,7 @@ const BLOG_POSTS = [
   //   uid: 'blog-4',
   //   image: 'https://cdn.cosmos.so/affd4b79-e848-4dfd-bd42-5f2c4a847365?format=jpeg'
   // },
-] as const;
+]
 
 
 // Motion variants and transition
