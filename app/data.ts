@@ -62,7 +62,6 @@ export const WORK_EXPERIENCE = [
       "FanDuel is online fantasy sports and betting company. At FanDuel, I work on building systems for API Gateway and related to auth flow which are both a T1 critical service.",
       "Building and owning services for 30M users at very demanding throughput and spikey traffic",
       "Enhancing scalability with deep-dive engineering analysis and scalability improvements on memory, compute-density, queue pressure, RDS for DB's with millions of rows",
-      "Using Spring Boot and many other related libraries running on top of k8s and AWS to build scalable back-end systems.",
       "Taking part in on-call support as part of \"build it, own it\" team. Mentoring junior and mid-level engineers."
     ],
   },
@@ -87,7 +86,8 @@ export const WORK_EXPERIENCE = [
     end: "Mar 2020",
     link: "https://privatecircle.co/",
     description: [
-
+      "PrivateCircle is a FinTech startup, building a B2B SaaS that enables customers to find and connect with the right customers, lenders, and investors.",
+      "Created and managed pipelines, and scraping. and ingesting millions of records on each run, to finally show it to the user.",
     ],
   },
   {
@@ -98,6 +98,8 @@ export const WORK_EXPERIENCE = [
     end: "Feb 2019",
     link: "https://shipthis.com/",
     description: [
+      "Led automating quotation of cargo, wherein a request for quotation is addressed in real-time.",
+      "Used AI for the intent of the E-Mails to reduce human overload and enable automation. Automated tracking of shipments (such as for air and ship cargo), making it generic and using NLP for Track Trace.",
     ],
   },
   {
