@@ -35,7 +35,7 @@ const BLOG_POSTS = [
   //   uid: 'blog-4',
   //   image: 'https://cdn.cosmos.so/affd4b79-e848-4dfd-bd42-5f2c4a847365?format=jpeg'
   // },
-]
+] as const;
 
 
 // Motion variants and transition
