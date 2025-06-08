@@ -59,7 +59,11 @@ export const WORK_EXPERIENCE = [
     end: "Present",
     link: "https://www.fanduel.com/",
     description: [
-
+      "FanDuel is online fantasy sports and betting company. At FanDuel, I work on building systems for API Gateway and related to auth flow which are both a T1 critical service.",
+      "Building and owning services for 30M users at very demanding throughput and spikey traffic",
+      "Enhancing scalability with deep-dive engineering analysis and scalability improvements on memory, compute-density, queue pressure, RDS for DB's with millions of rows",
+      "Using Spring Boot and many other related libraries running on top of k8s and AWS to build scalable back-end systems.",
+      "Taking part in on-call support as part of \"build it, own it\" team. Mentoring junior and mid-level engineers."
     ],
   },
   {
@@ -70,7 +74,7 @@ export const WORK_EXPERIENCE = [
     end: "Mar 2023",
     link: "https://onefin.in/",
     description: [
-      "Pivoted monolith to SaaS, launching a no-code finance platform used by 50+ clients.",
+      "Pivoted the company from a monolith to SaaS, launching a no-code finance platform used by 50+ clients.",
       "Led ~10-person cross-functional team; boosted release frequency 3× via CI/CD on GitHub Actions.",
       "Designed financial APIs processing 10 M+ invoices/month.",
     ],
@@ -102,7 +106,7 @@ export const WORK_EXPERIENCE = [
     company: "WittyFeed",
     start: "Jun 2016",
     end: "Oct 2017",
-    link: "https://www.wittyfeed.tv/",
+    link: "https://www.wittyfeed.com/",
     description: [
       "Co-architected and built WittyFeed’s mobile & desktop platform from zero to 100 M+ monthly users (45 k concurrent).",
       "Created an internal virality-analytics tool (Python + ML/NLP) that lifted ad revenue and was later pitched to investors.",
@@ -111,6 +115,31 @@ export const WORK_EXPERIENCE = [
     ],
   },
 
+] as const;
+
+
+export const EDUCATION = [
+  {
+    id: 1,
+    title: "Bachelor of Science in Computer Science",
+    company: "University of London",
+    start: "",
+    end: "",
+    link: "",
+    description: [
+      "Grade: First Class Honours",
+    ],
+  },
+  {
+    id: 2,
+    title: "AWS Solutions Architect",
+    company: "Amazon Web Services",
+    start: "",
+    end: "",
+    link: "",
+    description: [
+    ],
+  },
 ] as const;
 
 
